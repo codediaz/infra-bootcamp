@@ -6,12 +6,12 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "infraboocamp-state-grupo0"
-    key    = "infraboocamp-demo/infraboocamp-state-grupo0.tfstate"
-    region = "us-east-2"
+    bucket = "infraboocamp-state-grupo3"
+    key    = "infraboocamp-demo/infraboocamp-state-grupo3.tfstate"
+    region = "us-east-1"
   }
 }
 
 provider "aws" {
-  region = "us-east-2"
+  region = "us-east-1"
 }
