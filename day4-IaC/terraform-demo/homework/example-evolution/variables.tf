@@ -1,5 +1,5 @@
 variable "aws_region" {
-  default = "us-east-2"
+  default = "us-east-1"
 }
 
 variable "path_to_private_key" {
@@ -13,6 +13,6 @@ variable "path_to_public_key" {
 variable "amis" {
   type = map(string)
   default = {
-    us-east-2 = "ami-0d406e26e5ad4de53"
+    us-east-1 = "ami-03a6eaae9938c858c"
   }
 }

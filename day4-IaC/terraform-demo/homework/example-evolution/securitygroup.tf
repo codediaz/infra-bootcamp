@@ -13,8 +13,7 @@ resource "aws_security_group" "myinstance" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    ##########Level Charmeleon : EMPC_CHECK : Replace the cidr block here with the right value##########
-    cidr_blocks = [<What should be the IP here?>]
+    cidr_blocks = ["103.224.35.185/32"]
   }
 
   ingress {
@@ -44,8 +43,7 @@ resource "aws_security_group" "elb-securitygroup" {
     from_port   = 80
     to_port     = 80
     protocol    = "tcp"
-    ##########Level Charmeleon : EMPC_CHECK : Replace the cidr block here with the right value##########
-    cidr_blocks = [<What should be the IP here?>]
+    cidr_blocks = ["103.224.35.185/32"]
   }
   tags = {
     Name = "elb"
